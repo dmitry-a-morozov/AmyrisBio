@@ -231,22 +231,22 @@ module utils =
 
     // Registry utils
     // Registry handling    
-    open Microsoft.Win32
+    //open Microsoft.Win32
 
-    let ensureAmyrisKey () =  
-        let key = Registry.CurrentUser.OpenSubKey("Software",true)
-        match key.OpenSubKey("Amyris",true) with
-            | null ->
-                key.CreateSubKey("Amyris")
-            | anyKey -> anyKey
+    //let ensureAmyrisKey () =  
+    //    let key = Registry.CurrentUser.OpenSubKey("Software",true)
+    //    match key.OpenSubKey("Amyris",true) with
+    //        | null ->
+    //            key.CreateSubKey("Amyris")
+    //        | anyKey -> anyKey
 
 
-    let getSetKey (key:RegistryKey) keyName keyValue =
-        match key.GetValue(keyName) with
-            | :? string as x -> x
-            | _ -> 
-                key.SetValue(keyName,keyValue)
-                keyValue
+    //let getSetKey (key:RegistryKey) keyName keyValue =
+    //    match key.GetValue(keyName) with
+    //        | :? string as x -> x
+    //        | _ -> 
+    //            key.SetValue(keyName,keyValue)
+    //            keyValue
 
     // Sequence handling routines
     /// Reverse complement a DNA sequence

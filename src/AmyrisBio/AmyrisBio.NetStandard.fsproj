@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>AmyrisBio</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="version.fs" />
+    <Compile Include="AssemblyInfo.fs" />
+    <Compile Include="OptionExtensions.fs" />
+    <Compile Include="ErrorHandling.fs" />
+    <Compile Include="utils.fs" />
+    <Compile Include="biolib.fs" />
+    <Compile Include="Dna.fs" />
+    <Compile Include="goo.fs" />
+    <Compile Include="merhash.fs" />
+    <Compile Include="smithwaterman.fs" />
+    <Compile Include="sgd.fs" />
+    <Compile Include="primercore2.fs" />
+    <Compile Include="stitching.fs" />
+    <Compile Include="math_common.fs" />
+    <Compile Include="math_bhg.fs" />
+    <Compile Include="math_spf.fs" />
+    <Compile Include="math_stat.fs" />
+    <Compile Include="math.fs" />
+    <Compile Include="pileup.fs" />
+    <Compile Include="clustalw.fs" />
+    <Compile Include="pqueue.fs" />
+    <Compile Include="ukk.fs" />
+    <Compile Include="sequencesearch.fs" />
+    <Compile Include="dnaops.fs" />
+    <Compile Include="grid.fs" />
+    <Compile Include="cut_fileformat.fs" />
+    <Compile Include="mutations.fs" />
+  </ItemGroup>
+
+</Project>
